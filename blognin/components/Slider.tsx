@@ -13,7 +13,7 @@ useEffect(()=>
   {
     setActualImage((prev)=>
     {
-      if(prev >= 5)
+      if(prev >= 4)
       {
         return 1
       }
@@ -33,13 +33,10 @@ console.log(images)
 
   return (
 
-    <div className='w-full flex items-center justify-center relative'>
-      <video src='/images/slider/slider.mp4' autoPlay loop muted playsInline></video>
-      <h1 className='absolute font-kaushan text-6xl text-white'>Tworzymy Magię w Każdym Łyku.</h1>
-    </div>
-      // <div className='w-full overflow-hidden flex justify-center'>
-      //   <Image src={`/images/slider/${actualImage}.jpg`} alt={`slide ${actualImage}`}  width={0} height={0} sizes="100vw" style={{ width: '100%', height: '500px', borderRadius: '10px'}}  />
-      // </div>
+    <div className='w-full overflow-hidden flex justify-center'>
+        <Image src={`/images/slider/${actualImage}.jpg`} alt={`slide ${actualImage}`}  width={0} height={0} sizes="100vw" style={{ width: '100%', height: '500px', borderRadius: '10px'}}  />
+       </div>
+
   );
 };
 
