@@ -18,8 +18,8 @@ const MainNav = () => {
          <Link href="/"><Image src="/images/logowhite.png" alt="site logo" width={90} height={80}/></Link>
         {/* search */}
         <li className='flex text-white w-1/6 justify-around'>
-          <FaInstagram/>
-          <FaFacebook />
+          <a href="www.instagram.com" className='hover:text-purple-400'><FaInstagram /></a>
+          <a href='www.facebook.com' className='hover:text-sky-500'><FaFacebook /></a>
         </li>
         <Link href="/">Start</Link>
         <Link href="/coctails">Mikser Koktaili</Link>

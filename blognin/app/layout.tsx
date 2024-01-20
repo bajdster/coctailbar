@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Kaushan_Script } from 'next/font/google'
 import './globals.css'
 import MainNav from '@/components/MainNav'
+import Footer from '@/components/Footer'
 
 
 
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={kaushan.variable}>
         <MainNav/>
         {children}
+        <Footer/>
         </body>
     </html>
   )
