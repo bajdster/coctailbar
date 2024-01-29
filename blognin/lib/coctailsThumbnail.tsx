@@ -13,6 +13,7 @@ interface Image {
     image: Image;
     ingredients: string[];
     recipetags: { id: string }[];
+    title: string
   }
   
   interface PostNode {

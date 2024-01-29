@@ -13,9 +13,12 @@ export default async function Home() {
   const coctailThumbnails = await getCoctailThumbnails()
 
   const coctailNodes = coctailThumbnails.posts.edges
+
+  
   const coctails = coctailNodes.map(coctail =>{
     return {
       coctailUrl: coctail.node.recipe.image.sourceUrl,
+      coctailTitle: coctail.node.recipe.title
     }
   })
 
@@ -29,8 +32,15 @@ export default async function Home() {
         </div>
 
        <div className='bg-white w-full h-96 flex items-center justify-center'>
-        <p>tutaj dodać slider z ikonkami drinków i odeslaniem do przepisu a poniżej footer </p>
-        <Image src={coctails[0].coctailUrl} alt="test" width={200} height={200}/>
+
+        {coctails.map(coctail =>
+          {
+            return <p key={coctail.coctailTitle} className='flex flex-col items-center font-kaushan hover:scale-110 cursor-pointer transition-transform'>
+              <Image src={coctail.coctailUrl} alt={coctail.coctailTitle} width={200} height={200} />
+              {coctail.coctailTitle}
+              </p>
+          })}
+
        </div>
     </main>
   )
