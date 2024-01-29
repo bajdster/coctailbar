@@ -44,10 +44,7 @@ const DrinkBar = () => {
 
         <Image src="/images/lemon.png" alt="pineapple" width={0} height={0} sizes="100vw" style={{ width: '250px', height: '250px', zIndex: -100,position:'absolute', right:'200px'}}/>
        
-
- 
-
-     
+   
     </div>
   </div>
   

@@ -3,8 +3,24 @@ import Slider from '@/components/Slider'
 import Link from 'next/link'
 import VideoBanner from '@/components/VideoBanner'
 import LinkButton from '@/components/LinkButton'
+import { getCoctailThumbnails } from '@/lib/coctailsThumbnail'
 
-export default function Home() {
+
+
+export default async function Home() {
+
+
+  const coctailThumbnails = await getCoctailThumbnails()
+
+  const coctailNodes = coctailThumbnails.posts.edges
+  const coctails = coctailNodes.map(coctail =>{
+    return {
+      coctailUrl: coctail.node.recipe.image.sourceUrl,
+    }
+  })
+
+  console.log(coctails)
+
   return (
     <main className="flex min-h-screen flex-col items-center">
         <div className='w-full h-1/2 relative'>
@@ -14,6 +30,7 @@ export default function Home() {
 
        <div className='bg-white w-full h-96 flex items-center justify-center'>
         <p>tutaj dodać slider z ikonkami drinków i odeslaniem do przepisu a poniżej footer </p>
+        <Image src={coctails[0].coctailUrl} alt="test" width={200} height={200}/>
        </div>
     </main>
   )
