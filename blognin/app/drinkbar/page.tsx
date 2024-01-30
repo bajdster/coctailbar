@@ -38,7 +38,7 @@ const DrinkBar = () => {
 
         <div className='flex flex-col p-2'> 
           <p className='p-6 ml-5'>Skontaktuj się z Nami, a My Stworzymy Niepowtarzalne Menu Drinków Dla Ciebie!
-          Zapraszamy do kontaktu z naszym zespołem, aby omówić szczegóły i stworzyć personalizowaną ofertę drinków na Twój wyjątkowy event. Daj nam szansę uczynienia Twojego wydarzenia jeszcze bardziej wyjątkowym i smakowitym! <span className='text-purple-500 font-bold'>najbardziej prestiżowych barów.</span></p>
+          Zapraszamy do kontaktu z naszym zespołem, aby omówić szczegóły i stworzyć personalizowaną ofertę drinków na Twój wyjątkowy event. Daj nam szansę uczynienia Twojego wydarzenia jeszcze bardziej <span className='text-purple-500 font-bold'>wyjątkowym i smakowitym!</span></p>
         </div>
       </div>
     
