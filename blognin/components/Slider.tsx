@@ -33,8 +33,8 @@ console.log(images)
 
   return (
 
-    <div className='w-full overflow-hidden flex justify-center'>
-        <Image src={`/images/slider/${actualImage}.jpg`} alt={`slide ${actualImage}`}  width={0} height={0} sizes="100vw" style={{ width: '100%', height: '500px', borderRadius: '10px'}}  />
+    <div className='w-full overflow-hidden flex justify-center lg:rounded-full lg:w-96 lg:h-96'>
+        <Image src={`/images/slider/${actualImage}.jpg`} alt={`slide ${actualImage}`}  width={0} height={0} sizes="100vw" style={{ width: '100%', height: '500px'}} />
        </div>
 
   );
