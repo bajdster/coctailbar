@@ -8,11 +8,12 @@ const DrinkBar = () => {
     <main>
 
 <section className='flex w-full flex-col'>
+  <h1 className='text-6xl mb-8 mt-10 font-kaushan text-sky-600 text-center'>Drink bar na wesele</h1>
   
 
  <div className='w-full font-bold flex flex-col lg:flex-row relative'>
   <div className='w-full lg:order-2 lg:flex lg:items-center lg:justify-center lg:w-1/3 lg:relative top-60 '>  <Slider/></div>
-  <h1 className='text-6xl mb-8 mt-10 font-kaushan text-sky-600 text-center lg:hidden'>Drink bar na wesele</h1>
+  
 
   <div className='flex justify-evenly relative p-2 lg:w-1/3 lg:order-1'>
       <Image src="/images/pineapple.png" alt="pineapple" width={0} height={0} sizes="100vw" style={{ width: '250px', height: '250px', zIndex: -100,position:'absolute', left:'200px', transform: 'rotate(-15deg)'}}/>

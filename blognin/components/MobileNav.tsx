@@ -32,11 +32,11 @@ const MobileNav = () => {
       {isMenuOpen && <ul className='w-full flex flex-col text-sky-600 font-kaushan text-lg font-bold p-2 items-center lg:hidden'>
         
         {/* search */}
-        <Link href="/">Start</Link>
-        <Link href="/coctails">Mikser Koktaili</Link>
-        <Link href="/drinkbar">Oferta Drink Bar</Link>
-        <Link href="/">O nas</Link>
-        <Link href="/">Kontakt</Link>
+        <Link href="/" onClick={openMenuHandler}>Start</Link>
+        <Link href="/coctails" onClick={openMenuHandler}>Mikser Koktaili</Link>
+        <Link href="/drinkbar" onClick={openMenuHandler}>Oferta Drink Bar</Link>
+        <Link href="/" onClick={openMenuHandler}>O nas</Link>
+        <Link href="/" onClick={openMenuHandler}>Kontakt</Link>
       </ul>}
 
       <button onClick={openMenuHandler} className='text-white text-xl mb-2 lg:hidden'>
