@@ -31,7 +31,9 @@ export default async function Home() {
           <Image src="/images/logowhite.png" alt="logo" width={0} height={0} sizes="100vw" style={{ width: '400px', height: '400px', position: 'absolute', top:'50px', left:'50%', transform:'translate(-50%)'}} className='hidden lg:flex'/>
         </div>
 
-       <div className='bg-white w-full h-96 flex items-center justify-center'>
+       <div className='bg-white w-full h-screen flex items-center justify-center flex-wrap'>
+
+       {/* <h1 className='text-4xl mb-8 mt-10 font-kaushan text-sky-600 text-center'>Wybierz drink dopasowany do siebie</h1> */}
 
         {coctails.map(coctail =>
           {
