@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { getCoctailThumbnails } from '@/lib/coctailsThumbnail'
+import Search from '@/components/Search'
 
 
 
@@ -23,7 +24,9 @@ const page = async () => {
   return (
     <div className="flex min-h-screen flex-col items-center">
 
-      <div className='bg-white w-full h-96 flex items-center justify-center'>
+      <Search coctails={coctails}/>
+
+      <div className='bg-white w-full h-96 flex flex-wrap items-center justify-center'>
 
       {coctails.map(coctail =>
         {
