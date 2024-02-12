@@ -61,21 +61,37 @@ const DrinkBar = () => {
 
 
 
-<div className='mt-60'>
-        <h3 className='font-bold'>Różnorodność Drinków na Wesele</h3>
-        <p>Na dzień ślubu pragniemy stworzyć magiczny klimat, a nasze drinki są doskonałym uzupełnieniem tej atmosfery. Oferujemy szeroki wybór klasycznych i nowoczesnych koktajli, które zaspokoją różne gusta Twoich gości. Od eleganckich martini po świeże i owocowe mojito, nasz drink bar sprawi, że każdy moment będzie wyjątkowy.</p>
+<div className='mt-60 p-4'>
 
-<h3 className='font-bold'>Personalizowane Menu na Imprezy Firmowe</h3>
-<p>Dla imprez firmowych dostosowujemy nasze menu do unikalnych preferencji Twojej firmy. Zaskocz swoich współpracowników i klientów oryginalnymi drinkami, przygotowywanymi przez naszych umiejętnych barmanów. Każdy drink jest starannie dostosowany do charakteru wydarzenia, tworząc niezapomniane chwile networkingowe.</p>
+  <div className='flex relative'>  
+  <h3 className='font-bold absolute -top-20 left-1/2 -translate-x-1/2 text-xs bg-sky-600 p-4 w-32 h-32 flex items-center text-center rounded-full'>Różnorodność Drinków na Wesele</h3>
+        <p className="p-6 pt-16 rounded border-2 border-black">Na dzień ślubu pragniemy stworzyć magiczny klimat, a nasze drinki są doskonałym uzupełnieniem tej atmosfery. Oferujemy szeroki wybór klasycznych i nowoczesnych koktajli, które zaspokoją różne gusta Twoich gości. Od eleganckich martini po świeże i owocowe mojito, nasz drink bar sprawi, że każdy moment będzie wyjątkowy.</p>
+        </div>
+  <div className='flex relative mt-32'>
+    <h3 className='font-bold absolute -top-20 left-1/2 -translate-x-1/2 text-xs bg-sky-600 p-4 w-32 h-32 flex items-center text-center rounded-full'>Personalizowane Menu na Imprezy Firmowe</h3>
+<p className="p-6 pt-16 rounded border-2 border-black">Dla imprez firmowych dostosowujemy nasze menu do unikalnych preferencji Twojej firmy. Zaskocz swoich współpracowników i klientów oryginalnymi drinkami, przygotowywanymi przez naszych umiejętnych barmanów. Każdy drink jest starannie dostosowany do charakteru wydarzenia, tworząc niezapomniane chwile networkingowe.</p>
+</div>
+  <div className='flex relative mt-32'>
+    <h3 className='font-bold absolute -top-20 left-1/2 -translate-x-1/2 text-xs bg-sky-600 p-4 w-32 h-32 flex items-center text-center rounded-full'>Ekskluzywne Koktajle na Eventy VIP</h3>
+<p className="p-6 pt-16 rounded border-2 border-black">Na wyjątkowe eventy VIP proponujemy ekskluzywne koktajle, które spełnią najbardziej wymagające gusta. Nasz drink bar obsługuje nawet najbardziej prestiżowe wydarzenia, oferując najwyższą jakość i profesjonalizm. Każdy detal jest starannie przemyślany, aby stworzyć wyrafinowaną oprawę dla Twoich gości.</p>
+</div>
+  <div className='flex relative mt-32'>
+  <h3 className='font-bold absolute -top-20 left-1/2 -translate-x-1/2 text-xs bg-sky-600 p-4 w-32 h-32 flex items-center text-center rounded-full'>Obsługa Barmańska na Miejscu</h3>
+<p className="p-6 pt-16 rounded border-2 border-black">Nasz zespół nie tylko przygotowuje doskonałe napoje, ale również dba o elegancką prezentację i obsługę. Barmani doskonale radzą sobie z utrzymaniem dynamicznego tempa podczas imprez, zachowując przy tym pełen profesjonalizm. Obsługa barmańska na miejscu to gwarancja, że Twoi goście będą cieszyć się każdym łykiem.</p>
+  </div>
+  <div className='flex relative mt-32'>
 
-<h3 className='font-bold'>Ekskluzywne Koktajle na Eventy VIP</h3>
-<p>Na wyjątkowe eventy VIP proponujemy ekskluzywne koktajle, które spełnią najbardziej wymagające gusta. Nasz drink bar obsługuje nawet najbardziej prestiżowe wydarzenia, oferując najwyższą jakość i profesjonalizm. Każdy detal jest starannie przemyślany, aby stworzyć wyrafinowaną oprawę dla Twoich gości.</p>
+  <h3 className='font-bold absolute -top-20 left-1/2 -translate-x-1/2 text-xs bg-sky-600 p-4 w-32 h-32 flex items-center text-center rounded-full'>Dostosowane Opcje dla Każdego Eventu</h3>
+<p className="p-6 pt-16 rounded border-2 border-black">Nie ważne, czy organizujesz kameralne przyjęcie czy wielką galę – nasza oferta drink barowa dostosowuje się do różnych rozmiarów i charakterów wydarzeń. Dzięki naszemu doświadczeniu i elastyczności możemy stworzyć idealne menu dla każdej okazji.</p>
+  </div>
+      
 
-<h3 className='font-bold'>Obsługa Barmańska na Miejscu</h3>
-<p>Nasz zespół nie tylko przygotowuje doskonałe napoje, ale również dba o elegancką prezentację i obsługę. Barmani doskonale radzą sobie z utrzymaniem dynamicznego tempa podczas imprez, zachowując przy tym pełen profesjonalizm. Obsługa barmańska na miejscu to gwarancja, że Twoi goście będą cieszyć się każdym łykiem.</p>
 
-<h3 className='font-bold'>Dostosowane Opcje dla Każdego Eventu</h3>
-<p>Nie ważne, czy organizujesz kameralne przyjęcie czy wielką galę – nasza oferta drink barowa dostosowuje się do różnych rozmiarów i charakterów wydarzeń. Dzięki naszemu doświadczeniu i elastyczności możemy stworzyć idealne menu dla każdej okazji.</p>
+
+
+
+
+
     </div>
 
   {/* <div className='w-full h-96'>
