@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 type Coctails = {
     coctailUrl: string,
@@ -7,6 +8,8 @@ type Coctails = {
 }
 
 const Search: React.FC<{coctails: Coctails[]}> = ({coctails}) => {
+
+    console.log(coctails)
 
 const [coctailsTitles, setCoctailsTitles] = useState<{title:string}[]>([])
 const [searchingText, setSearchingText] = useState<string>('')
@@ -46,8 +49,7 @@ function searchHandler(e:React.ChangeEvent<HTMLInputElement>)
 }
 
   return (
-    <div className='w-full h-16 flex items-center justify-center '>
-        <p>{searchingText}</p>
+    <div className='w-full h-16 flex items-center justify-center mt-8'>
         <form className='w-3/4 h-full flex flex-col items-center justify-center relative'>
             <div className='w-3/4 h-3/4 lg:w-1/2'>
                 <input type='text' className='w-3/4 h-full p-2 rounded-md border-black border-2' onChange={searchHandler}></input>
@@ -57,7 +59,7 @@ function searchHandler(e:React.ChangeEvent<HTMLInputElement>)
             <ul className='bg-white z-20 absolute top-full w-1/2'>
                 {coctailsList?.map(title=>
                     {
-                        return <li className='p-2 border-2' key={title.title}>{title.title}</li>
+                        return <Link href={`/coctails/${title.title}`} key={title.title}><li className='p-2 border-2'>{title.title}</li></Link>
                     })}
             </ul>
         </form>
