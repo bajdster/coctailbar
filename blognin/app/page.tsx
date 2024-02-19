@@ -37,8 +37,10 @@ export default async function Home() {
         {coctails.map(coctail =>
           {
             return <p key={coctail.coctailTitle} className='flex flex-col items-center font-kaushan hover:scale-110 cursor-pointer transition-transform'>
+              <Link className="text-center" href={`coctails/${coctail.coctailTitle}`}>
               <Image src={coctail.coctailUrl} alt={coctail.coctailTitle} width={200} height={200} style={{ filter: 'drop-shadow(3px 1px 10px #000000)' }}/>
               {coctail.coctailTitle}
+              </Link>
               </p>
           })}
 

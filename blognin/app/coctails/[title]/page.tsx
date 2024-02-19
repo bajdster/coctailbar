@@ -28,10 +28,14 @@ const page: React.FC<PageProps> = async ({params}) => {
       <div className='flex items-center justify-around'>
         <Image src={url} alt={searchedTitle} width={200} height={200}/>
         <div>
+          <h2 className='text-xl mb-4'>Przygotuj: </h2>
           {editedIngredients}
         </div>
       </div>
-      <div className='flex w-3/4 text-justify mt-6'>{editedContent}</div>
+      <div className='flex w-1/2 text-justify mt-6 flex-col'>
+        <h2 className='text-xl mb-4'>Kroki: </h2>
+        {editedContent}
+      </div>
     </div>
   )
 }
