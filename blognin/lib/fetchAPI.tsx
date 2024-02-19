@@ -9,7 +9,7 @@ interface Image {
   
   interface Recipe {
     image: Image;
-    ingredients: string[];
+    ingredients: string;
     recipetags: { id: string }[];
     title: string
   }
