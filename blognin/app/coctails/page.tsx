@@ -20,13 +20,15 @@ const page = async () => {
     } 
   })
 
+  console.log(coctails)
+
 
   return (
     <div className="flex min-h-screen flex-col items-center">
 
       <Search coctails={coctails}/>
 
-      <div className='bg-white w-full h-96 flex flex-wrap items-center justify-center'>
+      <div className='bg-white w-full  flex flex-wrap items-center justify-center'>
 
       {coctails.map(coctail =>
         {

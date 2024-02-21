@@ -9,7 +9,6 @@ type Coctails = {
 
 const Search: React.FC<{coctails: Coctails[]}> = ({coctails}) => {
 
-    console.log(coctails)
 
 const [coctailsTitles, setCoctailsTitles] = useState<{title:string}[]>([])
 const [searchingText, setSearchingText] = useState<string>('')
@@ -53,7 +52,7 @@ function searchHandler(e:React.ChangeEvent<HTMLInputElement>)
         <form className='w-3/4 h-full flex flex-col items-center justify-center relative'>
             <div className='w-3/4 h-3/4 lg:w-1/2'>
                 <input type='text' className='w-3/4 h-full p-2 rounded-md border-black border-2' onChange={searchHandler}></input>
-                <button className='ml-4 font-kaushan text-sky-600 hover:text-sky-800'>Szukaj</button>
+                {/* <button className='ml-4 font-kaushan text-sky-600 hover:text-sky-800'>Szukaj</button> */}
 
             </div>
             <ul className='bg-white z-20 absolute top-full w-1/2'>

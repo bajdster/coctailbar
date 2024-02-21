@@ -43,6 +43,6 @@ export async function getCoctailDetails(title: string): Promise<PostsData> {
       }
     }
   }`);
+  
   return data;
 }
-

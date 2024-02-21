@@ -1,4 +1,5 @@
 const API_URL = 'https://bajdster.cfolks.pl/graphql'
+import { revalidatePath } from "next/cache";
 
 interface Image {
     id: string;
@@ -37,7 +38,8 @@ interface Image {
     const res = await fetch(API_URL as string, {
       method: 'POST',
       headers,
-      body: JSON.stringify({query})
+      body: JSON.stringify({query}),
+      cache:'no-store'
     });
   
     const json = await res.json();
